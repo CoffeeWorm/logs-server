@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start" : "pm2 src/index.js",
+    "start" : "pm2 start src/index.js --name logs_server",
+    "stop" : "pm2 stop logs_server",
     "dev": "node src/index.js",
     "lint": "eslint --ext .js src/index.js",
     "sync": "node src/scripts/sync.js"
